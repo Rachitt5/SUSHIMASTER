@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -68,6 +67,7 @@ export default {
 				sage: '#81B29A',
 				cream: '#F4F1DE',
 				navy: '#3D405B',
+				'navy-dark': '#2A2B3D',
 			},
 			fontFamily: {
 				'playfair': ['Playfair Display', 'serif'],
@@ -128,7 +128,16 @@ export default {
 				'float': 'float 6s ease-in-out infinite',
 				'rotate-slow': 'rotate-slow 15s linear infinite',
 				'fade-in': 'fade-in 0.5s ease-out',
-			}
+			},
+			backgroundImage: {
+				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+			},
+			transformStyle: {
+				'3d': 'preserve-3d',
+			},
+			perspective: {
+				'1000': '1000px',
+			},
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
